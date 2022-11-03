@@ -1,0 +1,23 @@
+$dark_blue: rgb(1, 36, 90);
+$light_blue: rgb(41, 172, 254);
+$sans_font: Helvetica, sans-serif;
+$serif_font: Garamond, serif;
+$white: #ffff;
+.dark-back {
+  background-color: $dark_blue;
+}
+.light-back {
+  background-color: $white;
+  color: $dark_blue;
+}
+.flex1 {
+  display: flex;
+  gap: 2rem;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+}
+.section_head {
+  text-align: center;
+}
