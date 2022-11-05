@@ -3,9 +3,9 @@ import { useState } from "react";
 import "./App.css";
 import MyHeader from "./components/MyHeader";
 import ArticleList from "./components/ArticleList";
+import Burger from "./components/Burger";
 
 function App() {
-  const [count, setCount] = useState(0);
   const user = {
     name: "Caroline",
     email: "caroline@caroline.com",
@@ -13,6 +13,7 @@ function App() {
   };
   return (
     <>
+      <Burger />
       <MyHeader></MyHeader>
 
       <MyMain {...user} />
