@@ -1,14 +1,13 @@
 import React from "react";
 import ListItem from "./ListItem";
-function List() {
+function List(props) {
   return (
     <fieldset className="list">
       <legend>List/</legend>
       <p>Some list</p>
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
+      {props.list.map((task) => {
+        return <ListItem deleteTask={props.deleteTask} task={task.task} id={task.id} key={task.id} />;
+      })}
     </fieldset>
   );
 }
